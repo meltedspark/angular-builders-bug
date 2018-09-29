@@ -1,0 +1,30 @@
+{
+  "module": {
+    "rules": [
+      {
+        "test": "/\\.css$/",
+        "use": [
+          {
+            "loader": "postcss-loader",
+            "options": {
+              "ident": "embedded",
+              "plugins": [
+                {
+                  "version": "6.0.23",
+                  "plugins": [
+                    null,
+                    null,
+                    null
+                  ],
+                  "postcssPlugin": "tailwind",
+                  "postcssVersion": "6.0.23"
+                }
+              ],
+              "sourceMap": true
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
